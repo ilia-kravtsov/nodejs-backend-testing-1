@@ -28,4 +28,12 @@ export class PostsService {
   find(postId: string) {
     return this.posts.find(({ id }) => id === postId);
   }
+
+  getPosts(): Post[] {
+    return this.posts;
+  }
+
+  getLastPostId(): number {
+    return this.lastPostId;
+  }
 }
