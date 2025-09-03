@@ -32,8 +32,4 @@ export class PostsService {
   getPosts(): Post[] {
     return this.posts;
   }
-
-  getLastPostId(): number {
-    return this.lastPostId;
-  }
 }
